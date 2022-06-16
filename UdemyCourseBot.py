@@ -17,11 +17,15 @@ warnings.filterwarnings('ignore')
 class Bot_driver:
 	def __init__(self):
 		
-		self.PATH = "C:\Program Files (x86)\chromedriver.exe" #default path of chromedriver
-		self.driver = webdriver.Chrome(self.PATH)
+		#self.PATH = "C:\Program Files (x86)\chromedriver.exe" #default path of chromedriver
+		chrome_options = webdriver.ChromeOptions()
+		chrome_options.add_argument("--headless")
+		chrome_options.add_argument("--no-sandbox")
+		chrome_options.add_argument("--disable-gpu")
+		self.driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), options=chrome_options)
 		self.driver.get("https://www.tutorialbar.com/all-courses/")
-		self.udemy_useremail = " " #your udemy login email
-		self.udemy_pw = " " #your udemy password
+		self.udemy_useremail = "noskhe@proton.me " #your udemy login email
+		self.udemy_pw = "tuhjkTWr1ZCNPy " #your udemy password
 		
 	def driver_bot(self):
 		#for getting tutorialsbar links of udemy courses
