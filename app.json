@@ -2,6 +2,7 @@
   "name": "UdemyCourseEnrollBot",
   "description": "A bot which scrapes coupon code & auto-enrolls you to that course.",
   "repository": "https://github.com/elmirarokni/UdemyCourseEnrollBot",
+  "stack": "heroku-22",
   "buildpacks": [
     {
       "url": "heroku/python"
