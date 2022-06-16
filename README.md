@@ -1,33 +1,32 @@
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+[![استقرار](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 # UdemyCourseEnrollBot
- A bot which scrapes coupon code & auto-enrolls you to that course.
+ رباتی که کد کوپن را می نویسد و شما را به صورت خودکار در آن دوره ثبت نام می کند.
 
-# Video-link of the bot working
+# پیوند ویدیویی کار ربات
 
 * **https://www.youtube.com/watch?v=u7dvwPBIMgI**
 
-## Requirements
+## الزامات
 
-* Requires python, selenium, anti-captcha (pip install python-anticaptcha).
+* به پایتون، سلنیوم، آنتی کپچا (pip install python-anticaptcha) نیاز دارد.
 
-* Works in Latest version of chrome.
+* در آخرین نسخه کروم کار می کند.
 
-## How to use?
+## چگونه استفاده کنیم؟
 
-* On Line number 21 & 23, give your udemy login-email id & udemy password, and you are done.
+* در خط شماره 21 و 23، شناسه ورود به سیستم-ایمیل و رمز عبور udemi را در udemi بدهید و کارتان تمام است.
 
-* You need to install chromedriver & give its path in the PATH variable. 
-### Note
+* باید chromedriver را نصب کنید و مسیر آن را در متغیر PATH قرار دهید.
+### توجه داشته باشید
 
-* I made this so it can only scrape data from the first page of tutorial-bar, as from the second pages most of the coupon codes are already expired.
+* من این را ساختم تا فقط بتواند داده ها را از صفحه اول نوار آموزشی خراش دهد، زیرا از صفحات دوم بیشتر کدهای کوپن منقضی شده اند.
 
-* If a course is already owned or there is a discount coupon it will throw an exception which is handled(it will print out a statement stating the problem).
+* اگر دوره ای قبلاً متعلق به دوره باشد یا کوپن تخفیف وجود داشته باشد، یک استثنا ایجاد می کند که رسیدگی می شود (بیانیه ای را چاپ می کند که مشکل را بیان می کند).
 
-* The google-recaptcha is commented because i don't have the minimum credits to use the captcha solving services, also the google-recaptcha comes if you try it repeatedly, so don't need to worry ^_^.
+* google-recaptcha نظر داده می شود زیرا من حداقل اعتبار برای استفاده از خدمات حل کپچا را ندارم، همچنین اگر آن را مکرر امتحان کنید google-recaptcha می آید، بنابراین لازم نیست نگران باشید ^_^.
 
-* You can use this bot once in a day.
+* از این ربات می توانید یک بار در روز استفاده کنید.
 
-#### Reminder
+#### یادآور
 
-**Always pay for the course that you want to support your mentor. These are just free coupons available for a certain period of time and not based on quantity.**
-
+**همیشه هزینه دوره ای را که می خواهید از مربی خود حمایت کنید پرداخت کنید. اینها فقط کوپن های رایگان هستند که برای مدت زمان مشخصی در دسترس هستند و بر اساس کمیت نیستند.**
