@@ -1,2 +1,1 @@
-worker: python UdemyCourseBot.py
-  
+web: python UdemyCourseBot.py
